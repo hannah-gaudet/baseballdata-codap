@@ -7,48 +7,104 @@
     <h2>New Vocabulary</h2>
 
     <p>
-      A <b>variable</b> is a general name for a values that changes. In baseball,
-      statistics like batting average, strikeout rate, and age are variables. We
-      usually use abbreviations to refer to each of these - writing out the same
-      words over and over can get tiring!
+      A <b>variable</b> is a general name for a values that changes. In
+      baseball, statistics like batting average, strikeout rate, and age are
+      variables. We usually use abbreviations to refer to each of these -
+      writing out the same words over and over can get tiring!
     </p>
 
     <ul>
-      <li><b>Offensive Statistics</b>
-      <ul>
-        <li><b>G (Games Played)</b>: Number of games in which the player has appeared</li>
-        <li><b>PA (Plate Appearances)</b>: Number of times the player has come to the plate</li>
-        <li><b>HR (Home Runs)</b>: Number of home runs</li>
-        <li><b>R (Runs Scored)</b>: Number of runs scored</li>
-        <li><b>RBI (Runs Batted In)</b>: Number of times a run scores as a result of a batter’s plate appearance</li>
-        <li><b>SB (Stolen Bases)</b>: Number of stolen bases</li>
-      </ul></li>
-       <li><b>Pitching Statistics</b>
-      <ul>
-        <li><b>W (Wins)</b>: Number of wins</li>
-        <li><b>L (Losses)</b>: Number of losses</li>
-        <li><b>SV (Saves)</b>: Number of saves</li>
-        <li><b>G (Games)</b>: Number of games in which the pitcher appeared</li>
-        <li><b>GS (Games Started)</b>: Number of games the pitcher started</li>
-        <li><b>IP (Innings Pitched)</b>: Number of total innings pitched (.1 represents 1/3 of an inning, .2 represents 2/3 of an inning)</li>
-        <li><b>K/9 (Strikeouts per 9 innings)</b>: Average number of strikeouts per 9 innings</li>
-        <li><b>BB/9 (Walks per 9 innings)</b>: Average number of walks per 9 innings</li>
-        <li><b>HR/9 (Home Runs per 9 innings)</b>: Average number of home runs allowed per 9 innings</li>
-        <li><b>IP (Innings Pitched)</b>: Number of total innings pitched (.1 represents 1/3 of an inning, .2 represents 2/3 of an inning).</li>
-      </ul></li>
+      <li>
+        <b>Offensive Statistics</b>
+        <ul>
+          <li>
+            <b>G (Games Played)</b>: Number of games in which the player has
+            appeared
+          </li>
+          <li>
+            <b>PA (Plate Appearances)</b>: Number of times the player has come
+            to the plate
+          </li>
+          <li><b>HR (Home Runs)</b>: Number of home runs</li>
+          <li><b>R (Runs Scored)</b>: Number of runs scored</li>
+          <li>
+            <b>RBI (Runs Batted In)</b>: Number of times a run scores as a
+            result of a batter’s plate appearance
+          </li>
+          <li><b>SB (Stolen Bases)</b>: Number of stolen bases</li>
+          <li>
+            <b>BB% (Walk Percentage)</b>: Frequency with which the batter has
+            walked, calculated as walks divided by plate appearances.
+          </li>
+          <li>
+            <b>K% (Strikeout Percentage)</b>: Frequency with which the batter
+            has struck out, calculated as strikeouts divided by plate
+            appearances.
+          </li>
+          <li>
+            <b>AVG (Batting Average)</b>: Rate of hits per at bat, calculated as
+            H/AB.
+          </li>
+          <li>
+            <b>OBP (On Base Percentage)</b>: Rate at which the batter reaches
+            base.
+          </li>
+          <li>
+            <b>SLG (Slugging Percentage)</b>: Average number of total bases per
+            at bat, calculated as Total Bases/AB.
+          </li>
+          <li>
+            <b>wOBA (Weighted On Base Average)</b>: Combines all the different
+            aspects of hitting into one metric, weighting each of them in
+            proportion to their actual run value.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Pitching Statistics</b>
+        <ul>
+          <li><b>W (Wins)</b>: Number of wins</li>
+          <li><b>L (Losses)</b>: Number of losses</li>
+          <li><b>SV (Saves)</b>: Number of saves</li>
+          <li>
+            <b>G (Games)</b>: Number of games in which the pitcher appeared
+          </li>
+          <li>
+            <b>GS (Games Started)</b>: Number of games the pitcher started
+          </li>
+          <li>
+            <b>IP (Innings Pitched)</b>: Number of total innings pitched (.1
+            represents 1/3 of an inning, .2 represents 2/3 of an inning)
+          </li>
+          <li>
+            <b>K/9 (Strikeouts per 9 innings)</b>: Average number of strikeouts
+            per 9 innings
+          </li>
+          <li>
+            <b>BB/9 (Walks per 9 innings)</b>: Average number of walks per 9
+            innings
+          </li>
+          <li>
+            <b>HR/9 (Home Runs per 9 innings)</b>: Average number of home runs
+            allowed per 9 innings
+          </li>
+          <li>
+            <b>BABIP (Batting Average on Balls in Play)</b>: The rate at which
+            the pitcher allows a hit when the ball is put in play, calculated as
+            (H-HR)/(AB-K-HR+SF).
+          </li>
+          <li>
+            <b>GB% (Ground Ball Percentage)</b>: The percentage of a pitcher’s
+            balls in play that are ground balls, calculated as GB/BIP.
+          </li>
+          <li>
+            <b>ERA (Earned Run Average)</b>: The average number of earned runs a
+            pitcher allows per 9 innings. ((ER*9)/IP)
+          </li>
+        </ul>
+      </li>
     </ul>
-      Independent variables can also be called <b>parameters</b> or
-      <b>attributes</b>. Each column in the data table below shows the values
-      for variables such as time, distance, mass, or period. Columns can contain
-      attributes that are set by the model or by your experiment, or that are
-      the result of a measurement or calculation.
-    </p>
-    <p>
-      Note that there are two “levels” in the table: <b>time series</b> of a
-      single run (on the left), and the <b>summary attributes</b> of different
-      runs (on the right).
-    </p>
-    <p>Back: <a href="phillies_data.html">Fun with Phillies Data</a></p>
-    <p>Next: <a href="data-table.html">How do I read the data table?</a></p>
+    <p>Back: <a href="data-table.html">How do I read a data table?</a></p>
+    <p>Next: <a href="summary.html">How can we summarize data?</a></p>
   </body>
 </html>
